@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/jquery.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/LineIcons.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Brenda Website</title>
+  </head>
+  <body data-spy="scroll" daa-target=".navbar">
+    <!-- START: Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="spinner-grow text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- END: Preloader -->
+
+    <!-- Aside -->
+    <aside class="aside">
+      <div class="nav-wrapper">
+        <div class="navbar-toggler navbar-light bg-light">
+          <img src="images/hamburger-menu.svg" />
+        </div>
+
+        <nav
+          class="navbar text-center align-items-center justify-content-center"
+        >
+          <div class="collapse navbar-collapse show" id="navbarCollapse">
+            <div class="about-avatar mb-5">
+              <a href="index.html">
+                <img
+                  src="images/me1.jpg"
+                  alt=""
+                  class="img-fluid mx-auto d-block shadow-sm rounded-full animate__animated animate__backInLeft animate__delay-1s"
+                />
+              </a>
+              <div class="about-avatar-details mt-4"><h2>ASher Li</h2></div>
+            </div>
+
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a href="about.html" class="nav-link text-underline"
+                  ><img src="images/home.svg" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-underline" href="about.html"
+                  ><img src="images/about.svg" />about</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-underline" href="gallery.html"
+                  ><img src="images/gallery.svg" />Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-underline" href="services.html"
+                  ><img src="images/service.svg" />Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-underline" href="blog.html"
+                  ><img src="images/blog.svg" />Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-underline" href="contact.html"
+                  ><img src="images/contact.svg" />Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="aside-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://t.me/asherlidev"
+                  ><i class="fab fa-telegram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/asherlidev"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/asher-li-bb2a67245/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://join.skype.com/invite/vCMf43w2qsPF"
+                  ><i class="fab fa-skype"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </aside>
+    <!-- end aside -->
+
+    <div class="page-wrapper">
+      <section class="section section-light">
+        <div class="container">
+          
+        </div>
+
+        <ul id="filter" class="filter mb-5">
+          <li class="active" data-group="all">All</li>
+          <li class="" data-group="ui">Blockchain</li>
+          <li class="" data-group="frontend">Fullstack web developer</li>
+          <li class="" data-group="backend">Fullstack App Developer</li>
+        </ul>
+
+        <div class="container">
+          <div class="list-items-container row my-gallery">
+            <figure
+              class="col-sm-6 col-md-4 list-item mb-4 mb-md-5"
+              data-groups="all ui"
+            >
+              <a href="./images/xtrachef-invoicecapture-phone.gif">
+                <img src="./images/xtrachef-invoicecapture-phone.gif" alt="Image description" />
+              </a>
+              <figcaption>
+                <div class="caption-inner">
+                  <h4 class="portfolio-item-title mt-3 mb-2">
+                     Inventory finance App
+                  </h4>
+                  <div class="portfolio-item-desc">backend and search engine</div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure
+              class="col-sm-6 col-md-4 list-item mb-4 mb-md-5"
+              data-groups="all frontend"
+            >
+              <a href="./images/fury.jpg">
+                <img src="./images/fury.jpg" alt="Image description" />
+              </a>
+              <figcaption>
+                <div class="caption-inner">
+                  <h4 class="portfolio-item-title mt-3 mb-2">
+                    market place website
+                  </h4>
+                  <div class="portfolio-item-desc">Frontend Dev</div>
+                </div>
+              </figcaption>
+            </figure>
+            <figure
+              class="col-sm-6 col-md-4 list-item mb-4 mb-md-5"
+              data-groups="all backend"
+            >
+              <a href="./images/nftpro.jpg">
+                <img src="./images/nftpro.jpg" alt="Image description" />
+              </a>
+              <figcaption>
+                <div class="caption-inner">
+                  <h4 class="portfolio-item-title mt-3 mb-2">
+                    nft market place platform
+                  </h4>
+                  <div class="portfolio-item-desc">Blockchain developer</div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure
+              class="col-sm-6 col-md-4 list-item mb-4 mb-md-5"
+              data-groups="all frontend"
+            >
+              <a href="./images/blog.jpg">
+                <img src="./images/blog.jpg" alt="Image description" />
+              </a>
+              <figcaption>
+                <div class="caption-inner">
+                  <h4 class="portfolio-item-title mt-3 mb-2">
+                    Art Gallery website
+                  </h4>
+                  <div class="portfolio-item-desc">Frontend Dev</div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure
+              class="col-sm-6 col-md-4 list-item mb-4 mb-md-5"
+              data-groups="all frontend"
+            >
+              <a href="./images/blog.jpg">
+                <img src="./images/blog.jpg" alt="Image description" />
+              </a>
+              <figcaption>
+                <div class="caption-inner">
+                  <h4 class="portfolio-item-title mt-3 mb-2">
+                    Art Gallery website
+                  </h4>
+                  <div class="portfolio-item-desc">Frontend Dev</div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure
+              class="col-sm-6 col-md-4 list-item mb-4 mb-md-5"
+              data-groups="all backend"
+            >
+              <a href="./images/blog.jpg">
+                <img src="./images/blog.jpg" alt="Image description" />
+              </a>
+              <figcaption>
+                <div class="caption-inner">
+                  <h4 class="portfolio-item-title mt-3 mb-2">
+                    Art Gallery website
+                  </h4>
+                  <div class="portfolio-item-desc">Backend Dev</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- START: TESTIMONY -->
+      <section
+        class="section section-dark section-testimony pt-0"
+        id="testimony"
+      >
+        <div class="container">
+          <div class="section-head text-center">
+            <span>Kind Words</span>
+            <h2>testimonial</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="swiper-container swiper-testimony">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide single-testimonials">
+                    <div class="single-testimonials-in mx-auto text-center">
+                      <div class="single-testimonials-head p-5">
+                        <p>
+                          "Raw denim you probably haven't heard of them jean
+                          shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                          synth master cleanse."
+                        </p>
+                      </div>
+                      <div class="single-testimonials-foot mx-auto mt-4">
+                        <img
+                          src="/images/me1.jpg"
+                          alt=""
+                          class="mx-auto b-box"
+                        />
+                        <h4 class="mt-3 font-weight-bold">Aster Joseph</h4>
+                        <span class="mt-1 d-block">Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide single-testimonials">
+                    <div class="single-testimonials-in mx-auto text-center">
+                      <div class="single-testimonials-head p-5">
+                        <p>
+                          "Raw denim you probably haven't heard of them jean
+                          shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                          synth master cleanse."
+                        </p>
+                      </div>
+                      <div class="single-testimonials-foot mx-auto mt-4">
+                        <img
+                          src="/images/me2.jpg"
+                          alt=""
+                          class="mx-auto b-box"
+                        />
+                        <h4 class="mt-3 font-weight-bold">Aster Joseph</h4>
+                        <span class="mt-1 d-block">Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide single-testimonials">
+                    <div class="single-testimonials-in mx-auto text-center">
+                      <div class="single-testimonials-head p-5">
+                        <p>
+                          "Raw denim you probably haven't heard of them jean
+                          shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                          synth master cleanse."
+                        </p>
+                      </div>
+                      <div class="single-testimonials-foot mx-auto mt-4">
+                        <img
+                          src="/images/me2.jpg"
+                          alt=""
+                          class="mx-auto b-box"
+                        />
+                        <h4 class="mt-3 font-weight-bold">Aster Joseph</h4>
+                        <span class="mt-1 d-block">Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide single-testimonials">
+                    <div class="single-testimonials-in mx-auto text-center">
+                      <div class="single-testimonials-head p-5">
+                        <p>
+                          "Raw denim you probably haven't heard of them jean
+                          shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                          synth master cleanse."
+                        </p>
+                      </div>
+                      <div class="single-testimonials-foot mx-auto mt-4">
+                        <img
+                          src="/images/me2.jpg"
+                          alt=""
+                          class="mx-auto b-box"
+                        />
+                        <h4 class="mt-3 font-weight-bold">Aster Joseph</h4>
+                        <span class="mt-1 d-block">Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="testimony-nav">
+                <a href="#" class="swiper-button-next"></a>
+                <a href="#" class="swiper-button-prev"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: TESTIMONY -->
+      <!-- footer -->
+      <footer>
+        <div class="footer section section-light">
+          <div class="container">
+            <p class="mb-0 text-center">
+              &copy; Shijing Liu 2020 | All Right Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- filter -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <script src="/js/jquery.shuffle.min.js"></script>
+    <script src="/js/shuffle-init.js"></script>
+    <!-- filter -->
+
+    <!-- slider -->
+
+    <script src="/js/photoswipe.min.js"></script>
+    <script src="/js/photoswipe-ui-default.min.js"></script>
+    <script src="/js/pswp.js"></script>
+
+    <!-- end slider -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
